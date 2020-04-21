@@ -44,7 +44,7 @@ end
 require 'mini_magick'
 
 puts "Loading image..."
-image = MiniMagick::Image.open("Headshot.jpg")
+image = MiniMagick::Image.open(ARGV[0])
 
 successAlert
 displayImageSize(image)
